@@ -1,0 +1,161 @@
+.createGrpBox {
+    position: absolute;
+    top: 28.5%;
+    left: 61.8%;
+    transform: translateX(-50%);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    width: 33vw;
+    min-width: 350px;
+    max-width: 600px;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0;
+    border-radius: 10px;
+    border: solid blue 2px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.createGrpBoxInner h3 {
+    text-align: center;
+}
+
+.groupInputContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.grpNameLabel {
+    font-size: 14px;
+    font-weight: bold;
+    width: 110px;
+}
+
+.grpNameInput {
+    flex: 1;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    outline: none;
+}
+
+.colorPickerContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.colorPickerLabel {
+    font-size: 14px;
+    font-weight: bold;
+    width: 110px;
+}
+
+.colorRow {
+    display: flex;
+    gap: 5px;
+    margin-left: 16px;
+}
+
+.colorLabel {
+    cursor: pointer;
+}
+
+.colorInput {
+    display: none;
+}
+
+.colorCircle {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+}
+
+.colorCircle.selected {
+    border: 2px solid black;
+}
+
+.createBtnContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.createBtn {
+    width: 130px;
+    height: 30px;
+    background-color: #001b75;
+    color: white;
+    border-radius: 13px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    left: 2.3rem;
+}
+.chooseSpan{
+    font-weight: 600;
+    font-size: 14px;
+    flex-wrap: wrap;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .createGrpBox {
+        position: absolute;
+        left:185px;
+        height: auto;
+        margin: 0 auto;
+        margin-right: 40px;
+
+        display: flex;
+        justify-content: center;
+        width: 250px;
+        max-width: 280px;
+        align-items: center;
+        background-color: #f0f0f0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        border: solid blue 2px;
+        
+        z-index: 10;
+    }
+
+    .grpNameLabel {
+        width: 25px;
+    }
+
+    .grpNameInput {
+        padding-left: 7px;
+        margin-left: 35px;
+    }
+
+    .colorRow {
+        gap: 4px;
+        margin-left: 37px;
+    }
+
+    .createBtn {
+        width: 65px;
+    }
+    .colorCircle{
+        width:21px;
+        height:21px;
+        
+    }
+    .chooseSpan{
+        font-size: 14px;
+    font-weight: bold;
+    width: 25px;    }
+}
+
